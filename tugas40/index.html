@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 40 DOM JS</title>
+</head>
+<body>
+    <button type="button" onclick="tombolJavascript()" name="button">Jalankan</button>
+    <br>
+    <br>
+    <hr>
+    <b>Base URI</b> Property : <br>
+    <p id="satu">contoh</p>
+    <hr>
+    <b>Body</b> Property : <br>
+    <p id="dua">contoh</p>
+    <hr>
+    <b>Create</b> Element : <br><br>
+
+    <script>
+        function tombolJavascript() {
+            var bu = document.baseURI;
+            document.getElementById("satu").innerHTML = bu;
+
+            var be = document.body.style.backgroundColor = "green";
+            document.getElementById("dua").innerHTML = "color : " + be
+
+            var ce = document.createElement("input");
+            document.body.appendChild(ce);
+        }
+    </script>
+</body>
+</html>
